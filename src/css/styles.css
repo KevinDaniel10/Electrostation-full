@@ -1,0 +1,226 @@
+/* Declaration of variables CSS */
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #00A8A8;
+    --colorTres: #161E21;
+    --fuentePrincipal: "Roboto", sans-serif;
+}
+
+/* General styles for the document HTML  */
+html {
+    background-color: var(--colorUno);
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
+
+
+/* Styles for containers */
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* General styles for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* General styles for btn */
+.button{
+    display: block;
+    background-color: var(--colorDos);
+    padding: .8rem;
+    color: white;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;  
+}
+
+.button:hover{
+    background-color: var(--colorTres);
+}
+
+/* Code CSS for your project */
+
+/* una regla del ccs*/
+
+.navbar_container{
+    text-align: center;
+    padding-top: 1rem; /*Espaciado del cuadrano*/
+}
+
+@media(width>=768px){
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+}
+
+.navbar_logo{
+    color: var(--colorTres);
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar_logo--primary{
+    color: var(--colorDos);
+}
+
+
+
+ul {
+    padding: 0;
+    list-style: none;
+    
+    display: flex; 
+    justify-content: center;
+    gap: 1rem;
+    z-index: 9;
+}
+
+ul li a{
+    color: var(--colorTres);
+    text-decoration: none;
+    cursor:pointer;
+    font-size: 18px;
+
+}
+/*Pseudoclase */
+ul li a:hover{
+    text-decoration: underline;
+    color: var(--colorDos);
+}
+
+main{
+    background-color: var(--colorTres);
+}
+
+.hero__text{
+    text-align: center;
+    font-size: 18px;
+    color: var(--colorUno);
+    padding: 1rem 0;
+    
+}
+
+.hero__title--primary{
+    color: var(--colorDos);
+    text-transform:uppercase; 
+}
+
+
+.hero__buttons{
+    display: flex;/*Botones juntos*/
+    justify-content: center;
+    gap: 1rem; /*Separacion de las cajas*/
+}
+
+
+/*Estilos a elementos comunes*/
+.hero__button--primary,.hero__button--secondary{
+    text-decoration: none;
+    border: 2 px solid var(--colorDos);
+}
+
+@media(width >= 768px){
+    .hero{
+        display: flex;
+        justify-content: flex-end;/*Cajas inicio,centradas, final*/
+        gap: 2rem;
+        align-items: center; /*Alinear a los intems dentro de la caja arriba,centradas abajo*/
+        height: 35rem; /*Altura de la caja .hero*/
+        margin-top: 1rem;
+    }
+    .hero__text{
+        margin: 0;
+    }
+    .hero__title{
+        font-size:4rem;
+        text-transform: uppercase;
+    }
+   
+}
+
+
+/*Styles for Section*/
+
+.mobile{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mobile__description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.mobile__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.mobile__buttons:hover{
+    cursor: pointer;
+}
+
+@media(width >= 768px){
+    .app{
+        margin-top: 5rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .mobile__title{
+        font-size:2.5rem;
+        text-transform: uppercase;
+    }
+    .mobile__description{
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .mobile{
+        order: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column; /*direccion me las cajas*/
+        justify-content: space-evenly;
+        max-width: 45rem;
+        margin: 0;
+    }
+}
+
+/*Styles for footer*/
+
+.footer{
+    background-color: var(--colorTres);
+    color:var(--colorUno) ;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer__buttons{
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+}
+
+@media(width >= 768px){
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+
